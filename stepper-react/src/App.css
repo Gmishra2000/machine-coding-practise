@@ -1,0 +1,47 @@
+.steps-container{
+  position: relative;
+}
+.steps-container__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+}
+.steps{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  transition: all 0.2s ease;
+}
+
+.steps-container__progress--line{
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background: gray;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transition: all 0.25s ease;
+}
+
+.steps.active {
+  background-color: skyblue;
+}
+
+.step-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.prev{
+  margin-right: 8px;
+  padding: 20px;
+}
+.next{
+  padding: 20px;
+}
