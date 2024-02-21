@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.main-component{
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid rgba(5, 5, 5, 0.06);
+  border-radius: 8px;
+}
+
+.main-tab-component{
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.active{
+  border-bottom: 1px solid blue;
+}
+
+.main-tab-component span{
+  padding: 10px;
+  cursor: pointer;
+}
+
+.main-tab-data-component{
+  padding-top: 20px;
+  border-top: .5px solid #ccc;
+}
